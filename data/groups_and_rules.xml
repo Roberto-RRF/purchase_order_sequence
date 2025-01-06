@@ -1,0 +1,21 @@
+<odoo>
+    <data>
+        <!-- Define a custom category -->
+        <record id="module_category_purchase_custom" model="ir.module.category">
+            <field name="name">Compras</field>
+            <field name="sequence">10</field> <!-- Optional: determines the display order -->
+        </record>
+
+        <!-- Group: Ver órdenes de compra de Importación y Nacionales -->
+        <record id="group_purchase_importaciones" model="res.groups">
+            <field name="name">Ver órdenes de compra de Importación y Nacionales</field>
+            <field name="category_id" ref="module_category_purchase_custom"/>
+        </record>
+
+        <!-- Group: Ver órdenes de compra de Indirectos -->
+        <record id="group_purchase_indirectos" model="res.groups">
+            <field name="name">Ver órdenes de compra de Indirectos</field>
+            <field name="category_id" ref="module_category_purchase_custom"/>
+        </record>
+    </data>
+</odoo>
