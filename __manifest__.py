@@ -6,7 +6,7 @@
     'website': 'https://www.anfepi.com',
     'category': 'Purchases',
     'summary': 'Assigns different sequences to purchase orders based on their type and configures user groups.',
-    'depends': ['purchase'],
+    'depends': ['purchase', 'approvals_purchase'],
     'data': [
         'data/groups_and_rules.xml',
         'data/ir_sequence_data.xml',
